@@ -1,0 +1,28 @@
+div.nav {
+    height: 50px;
+    background-color: #e9ecef;
+    border-bottom: #ddd solid 1px;
+}
+
+.nav-item {
+    min-width: 100px;
+    height: 50px;
+
+}
+
+.nav-link {
+    padding: 14px 0 !important;
+    height: 50px;
+    /*margin: 0;*/
+;
+
+}
+.dropdown > * {
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+.icon {
+    font-size: 48px;
+}

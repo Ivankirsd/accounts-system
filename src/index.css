@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-y:hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col, [class*="col-"] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+
+}
