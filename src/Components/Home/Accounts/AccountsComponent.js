@@ -1,8 +1,8 @@
 import React from 'react';
-import { Redirect, Switch } from 'react-router';
+import { Switch } from 'react-router';
 import { Route } from "react-router-dom";
 
-import TvAccountsComponent from "./tv/tv-accounts-component";
+import TvAccountsComponent from "./tv/TvAccountsComponent";
 
 export default class AccountsComponent extends React.Component{
     constructor(props) {

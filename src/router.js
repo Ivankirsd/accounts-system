@@ -1,13 +1,12 @@
-import React from 'react';
-import HomeComponent from "./components/home/home-component";
-import AccountsComponent from "./components/home/accounts/accounts-component";
-import NotFoundComponent from "./components/404/not-found-component";
-import TvAccountsComponent from "./components/home/accounts/tv/tv-accounts-component";
-import AuthComponent from "./components/auth/auth-component";
+import HomeComponent from "./Components/Home/HomeComponent";
+import AccountsComponent from "./Components/Home/Accounts/AccountsComponent";
+import NotFoundComponent from "./Components/404/NotFoundComponent";
+import TvAccountsComponent from "./Components/Home/Accounts/tv/TvAccountsComponent";
+import AuthComponent from "./Components/Auth/AuthComponent";
 
 export const routes= [
     {   name: 'Auth',
-        path: "/auth",
+        path: "/Auth",
         component: AuthComponent,
         parentComponent: null,
     },
@@ -19,31 +18,31 @@ export const routes= [
     },
     {
         name: 'Accounts',
-        path: "/accounts",
+        path: "/Accounts",
         component: AccountsComponent,
         parentComponent: 'HomeComponent',
     },
     {
         name: 'TV',
-        path: "/accounts/tv",
+        path: "/Accounts/tv",
         component: TvAccountsComponent,
         parentComponent: 'AccountsComponent',
     },
     {
         name: 'MT',
-        path: "/accounts/mt",
+        path: "/Accounts/mt",
         component: TvAccountsComponent,
         parentComponent: 'AccountsComponent',
     },
     {
         name: 'Wia',
-        path: "/accounts/wia",
+        path: "/Accounts/wia",
         component: TvAccountsComponent,
         parentComponent: 'AccountsComponent',
     },
     {
         name: 'Reports',
-        path: "/reports",
+        path: "/Reports",
         component: AccountsComponent,
         parentComponent: 'HomeComponent',
     },

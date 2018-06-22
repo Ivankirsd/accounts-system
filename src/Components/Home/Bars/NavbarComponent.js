@@ -1,18 +1,14 @@
 import React from 'react';
-import { Nav, NavItem, NavLink, Form, Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
+import { Nav, NavItem, Form, Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 import './navbar.css'
-
 import { routes } from './../../../router';
 
-import { MdSettings } from 'react-icons/lib/md/settings';
 import MdAccountCircle  from 'react-icons/lib/md/account-circle';
-import HomeComponent from "../home-component";
 
 
-
-export default class Navbar extends React.Component{
+export default class NavbarComponent extends React.Component{
     constructor(props) {
         super (props);
 
@@ -32,6 +28,9 @@ export default class Navbar extends React.Component{
         return (
             <div className="nav navbar-expand-lg justify-content-between">
                 <Nav className="">
+                    <NavItem>
+                        <div className="logo"></div>
+                    </NavItem>
                      { routes.filter(route => route.parentComponent === 'HomeComponent').map((route, i) =>
                         <NavItem className="" key={i}>
                             <Link className="nav-link text-center" to={route.path}>{route.name}</Link>
@@ -55,10 +54,6 @@ export default class Navbar extends React.Component{
                         </DropdownMenu>
                     </Dropdown>
                 </Nav>
-
-
-
-
             </div>
         );
     }

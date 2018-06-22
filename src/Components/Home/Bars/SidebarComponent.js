@@ -16,14 +16,14 @@ export default class SidebarComponent extends React.Component{
     render () {
         // console.log(this.props);
         switch (this.props.location.pathname) {
-            case '/accounts':
-            case '/accounts/tv':
-            case '/accounts/mt':
-            case '/accounts/wia':
+            case '/Accounts':
+            case '/Accounts/tv':
+            case '/Accounts/mt':
+            case '/Accounts/wia':
                 return (<SidebarAccounts/>);
                 break;
 
-            case '/reports':
+            case '/Reports':
                 return (<SidebarReports/>);
                 break;
             default:

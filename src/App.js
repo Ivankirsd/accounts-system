@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Redirect, Switch } from 'react-router';
 
-import AuthComponent from './components/auth/auth-component';
-import HomeComponent from './components/home/home-component';
-import NotFoundComponent from './components/404/not-found-component';
+import AuthComponent from './Components/Auth/AuthComponent';
+import HomeComponent from './Components/Home/HomeComponent';
+import NotFoundComponent from './Components/404/NotFoundComponent';
 
 import './App.css';
 
-import AuthService from './services/auth-service';
+import AuthService from './Services/AuthService';
 
 
 

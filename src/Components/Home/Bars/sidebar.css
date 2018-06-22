@@ -2,3 +2,7 @@
     background-color: #f8f9fa;
     border-right: #007bff40 solid 1px;
 }
+
+.sidebar .nav-item {
+    border-bottom: #007bff40 solid 1px;
+}

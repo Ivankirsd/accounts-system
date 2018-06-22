@@ -1,30 +1,28 @@
 import React from 'react';
-import { Redirect, Switch } from 'react-router';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+// import { Redirect, Switch } from 'react-router';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 import './auth.css';
 
-import AuthService from './../../services/auth-service';
+import AuthService from '../../Services/AuthService';
 
 
 export default class AuthComponent extends React.Component{
     constructor(props) {
-        super (props);
-
-        this.loginHandler = this.loginHandler.bind(this);
+        super(props);
     }
 
-    loginHandler(e){
+    handleFormSubmit = (e) => {
         e.preventDefault();
         AuthService.login();
-        this.props.history.push("/accounts");
+        this.props.history.push("/Accounts");
     }
 
     render () {
         return (
             <div className="container">
                 <div className="row h-100 justify-content-center align-items-center">
-                    <Form>
+                    <Form onSubmit={this.handleFormSubmit}>
                         <FormGroup>
                             <Label for="email">Email</Label>
                             <Input  type="email" name="email" id="email" placeholder="Type Email"/>
@@ -40,7 +38,7 @@ export default class AuthComponent extends React.Component{
                                 <option value="en">En</option>
                             </Input>
                         </FormGroup>
-                        <Button onClick={this.loginHandler} className="w-100" color="primary">Enter</Button>
+                        <Button type="submit" className="w-100" color="primary">Enter</Button>
                     </Form>
                 </div>
 

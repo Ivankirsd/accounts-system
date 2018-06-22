@@ -4,19 +4,23 @@ div.nav {
     border-bottom: #ddd solid 1px;
 }
 
-.nav-item {
+div.nav .nav-item {
     min-width: 100px;
     height: 50px;
-
+    border-right: #007bff40 solid 1px;
 }
 
 .nav-link {
     padding: 14px 0 !important;
     height: 50px;
     /*margin: 0;*/
-;
-
 }
+
+.nav-link:hover {
+    background-color: #007bff1a;
+}
+
+
 .dropdown > * {
     margin: 0 !important;
     padding: 0 !important;
@@ -25,4 +29,15 @@ div.nav {
 
 .icon {
     font-size: 48px;
+}
+
+.logo {
+    background-image: url('../../../logo.svg');
+    background-size: cover;
+    width: 70px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+
 }

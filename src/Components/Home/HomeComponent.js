@@ -1,14 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { Redirect, Switch } from 'react-router';
 
 
-import AccountsComponent from "./accounts/accounts-component";
-import Navbar from "./bar/navbar";
+import AccountsComponent from "./Accounts/AccountsComponent";
+import NavbarComponent from "./Bars/NavbarComponent";
 
-import SidebarComponent from "./bar/sidebar";
-import ReportsComponent from "./reports/reports-component";
-import TvAccountsComponent from "./accounts/tv/tv-accounts-component";
+import SidebarComponent from "./Bars/SidebarComponent";
+import ReportsComponent from "./Reports/ReportsComponent";
 
 export default class HomeComponent extends React.Component{
     constructor(props) {
@@ -20,7 +19,7 @@ export default class HomeComponent extends React.Component{
         return (
 
             <div className="h-100">
-                <Navbar className="row "/>
+                <NavbarComponent className="row "/>
                 <div className="row no-gutters h-100">
                     <div className="col-2">
                         <SidebarComponent match={match} location={location} history={history}/>

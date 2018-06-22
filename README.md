@@ -780,13 +780,13 @@ Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 // Put any other imports below so that CSS from your
-// components takes precedence over default styles.
+Components
 ```
 
 Import required React Bootstrap components within ```src/App.js``` file or your custom component files:
 
 ```js
-import { Navbar, Jumbotron, Button } from 'react-bootstrap';
+import { NavbarComponent, Jumbotron, Button } from 'react-bootstrap';
 ```
 
 Now you are ready to use the imported React Bootstrap components within your component hierarchy defined in the render method. Here is an example [`App.js`](https://gist.githubusercontent.com/gaearon/85d8c067f6af1e56277c82d19fd4da7b/raw/6158dd991b67284e9fc8d70b9d973efe87659d72/App.js) redone using React Bootstrap.
@@ -1148,8 +1148,8 @@ Matches are regular expressions, so that you can use a regexp to match multiple 
       }
       // ...
     },
-    // Matches /bar/abc.html but not /bar/sub/def.html
-    "/bar/[^/]*[.]html": {
+    Bars
+    Bars: {
       "target": "<url_3>",
       // ...
     },
