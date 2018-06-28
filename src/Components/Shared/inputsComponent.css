@@ -1,0 +1,14 @@
+.dropdown {
+    /*width: 30px;*/
+}
+
+.dropdown-toggle-class {
+    width: 100%;
+    /*margin: auto*/
+}
+
+
+button.clear-all-field-button {
+    margin: auto;
+    width: 100%;
+}

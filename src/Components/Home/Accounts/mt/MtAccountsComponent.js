@@ -1,10 +1,10 @@
 import React from 'react';
 import TableComponent from "../../../Shared/TableComponent";
 
-import tvAccounts from './../../../../Constans/TableData';
+import tvAccounts from '../../../../Constans/TableData';
 
 
-export default class TvAccountsComponent extends React.Component{
+export default class MtAccountsComponent extends React.Component{
     constructor(props) {
         super (props);
     }
@@ -12,7 +12,7 @@ export default class TvAccountsComponent extends React.Component{
     render () {
         // console.log(this.props)
         return (
-            <p>TvAccountsComponent work</p>,
+            <p>MtAccountsComponent work</p>,
             <TableComponent className="h-100" data={tvAccounts}/>
         );
     }

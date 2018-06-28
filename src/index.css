@@ -1,23 +1,18 @@
-html {
-  height: 100%;
-}
+html, body, #root {height:100%; position:relative;}
 
 body {
-  height: 100%;
+  /*height: 100%;*/
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   overflow-y:hidden;
 }
 
-#root {
-  height: 100%;
-}
-
 
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
+  /*margin-bottom: 0;*/
 }
 
 .col, [class*="col-"] {
@@ -25,3 +20,25 @@ body {
   padding-left: 0 !important;
 
 }
+
+.home-component-wraper {
+  height: calc(100% - 50px - 30px);
+  min-height: 100px;
+}
+
+
+.footer-container {
+    background-color: #e9ecef;
+}
+
+.footer {height:30px;  background-color: #e9ecef;}
+
+/*.footer {*/
+  /*!*position: fixed;*!*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*width: 100%;*/
+  /*!*background-color: red;*!*/
+  /*color: white;*/
+  /*text-align: center;*/
+/*}*/

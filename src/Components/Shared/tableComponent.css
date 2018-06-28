@@ -1,0 +1,52 @@
+.table-container {
+    max-height: calc(100% - 70px);
+}
+
+.table-responsive {
+    /*max-height: calc(100% - 40px);*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.table {
+    margin: 0 !important;
+    padding: 0;
+}
+
+thead {
+    /*top: 0;*/
+    position: sticky !important;
+    background-color: #e9ecef;
+}
+
+thead tr th {
+    max-width: 200px;
+    min-width: 200px;
+    width: 200px;
+}
+tbody tr td {
+    max-width: 200px;
+    min-width: 200px;
+    width: 200px;
+}
+
+
+td.options {
+    max-width: 40px;
+    min-width: 40px;
+    padding: auto 0%;
+}
+tr th.row-index {
+    width: 40px !important;
+    max-width: 40px !important;
+    min-width: 40px !important;
+
+}
+
+.pagination-container {
+    height: 31px;
+}
+
+.pagination-container.page-info {
+    margin: auto 0;
+}
