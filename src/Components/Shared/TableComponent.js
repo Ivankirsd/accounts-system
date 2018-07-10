@@ -48,6 +48,7 @@ export default class TableComponent extends React.Component{
             paginatorCurrentPage: 1,
             paginatorPerPageValue: 10,
             modal: false,
+            currentData: {},
         };
     }
 
@@ -203,7 +204,16 @@ export default class TableComponent extends React.Component{
 
 
     toggleModalOpen =(e) => {
-        console.log('Modal open')
+        // debugger;
+        if (!this.state.modal) {
+            // console.log('Modal open', e)
+            console.log('e.target.id', e.target)
+            this.setState({
+                currentData: this.state.tableData.find((data) => {return data.id === Number(e.target.id)}),
+            });
+            // console.log(this.state.tableData.find((data) => {return data.id === Number(e.target.id)}))
+
+        }
         this.setState({
             modal: !this.state.modal
         });
@@ -236,7 +246,14 @@ export default class TableComponent extends React.Component{
 
         return (
             <div className="table-container h-100" >
-                {this.state.modal ? <ModalComponent modalIsOpen={this.state.modal} modalclosed={this.toggleModalOpen}/> : '' }
+                {this.state.modal ?
+                    <ModalComponent
+                        modalIsOpen={this.state.modal}
+                        modalclosed={this.toggleModalOpen}
+                        modalType="edit"
+                        data={this.state.currentData}
+                        tableHeaders={this.state.tableHeaders}
+                    /> : '' }
 
                 <Table className="h-100 table no-gutters" striped bordered responsive size="sm">
                         <thead className="row no-gutters fixed-top">

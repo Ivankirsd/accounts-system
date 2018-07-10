@@ -29,7 +29,7 @@ export default class InputsComponent extends React.Component{
 
     toggle =(e) => {
 
-        console.log (e);
+        // console.log (e);
         this.setState({
             dropdownOpen: !this.state.dropdownOpen
         });
@@ -92,7 +92,7 @@ export default class InputsComponent extends React.Component{
                             {this.props.icon}
                         </DropdownToggle>
                         <DropdownMenu className="">
-                            <DropdownItem onClick={this.props.modalopen}>Edit</DropdownItem>
+                            <DropdownItem onClick={this.props.modalopen} id={this.props.id}>Edit</DropdownItem>
                             <DropdownItem>Delete</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
